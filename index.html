@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f2f1ed">
+  <meta name="description" content="Feiming (Tony) Wu — a personal space for technology, design, and the things in between.">
+  <meta property="og:title" content="Tony Wu — Between Systems & Stories">
+  <meta property="og:description" content="A personal space for technology, design, and the things in between.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://feimingwu7.github.io">
+  <title>Tony Wu — Between Systems & Stories</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css?v=4">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Tony Wu, home"><span class="brand-glyph">T<span class="brand-dot">·</span>W</span></a>
+      <div class="header-right"><button class="lang-toggle" id="lang-toggle" type="button" aria-label="Switch language">中</button><button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu"><span></span><span></span><span class="menu-label">MENU</span></button></div>
+    </header>
+
+    <nav id="site-menu" class="site-menu" aria-label="Main navigation" hidden>
+      <a href="#home" data-route="home"><strong data-i18n="navHome">Home</strong><span>↗</span></a>
+      <a href="#work" data-route="work"><strong data-i18n="navWork">Selected work</strong><span>↗</span></a>
+      <a href="#about" data-route="about"><strong data-i18n="navAbout">About</strong><span>↗</span></a>
+      <a href="#contact" data-route="contact"><strong data-i18n="navContact">Contact</strong><span>↗</span></a>
+    </nav>
+
+    <main id="main-content" tabindex="-1">
+      <section class="view home-view" id="home-view" aria-labelledby="home-title">
+        <div class="home-hero">
+          <div class="hero-copy">
+            <p class="hero-intro" data-i18n="homeIntro">Hello, I’m</p>
+            <h1 id="home-title" aria-label="Tony Wu">Tony <span class="hero-last">Wu<span class="period">.</span></span></h1>
+            <div class="hero-subline"><p data-i18n="homeTagline">Building between systems<br>and stories.</p></div>
+          </div>
+          <div class="portrait-composition"><div class="portrait-frame"><img src="portrait.jpg" alt="Tony Wu" width="768" height="1024"></div></div>
+        </div>
+        <div class="home-bottom"><p class="home-brief" data-i18n="homeBrief">I study Economics & Data Science at USC. I’ve built robotics interfaces and games, and I care about how technology feels to the people using it.</p><div class="home-links"><a href="#work"><strong data-i18n="navWork">Selected work</strong><span class="link-arrow">↗</span></a><a href="#about"><strong data-i18n="navAbout">About</strong><span class="link-arrow">↗</span></a><a href="#contact"><strong data-i18n="navContact">Contact</strong><span class="link-arrow">↗</span></a></div></div>
+      </section>
+
+      <section class="view content-view" id="work-view" aria-labelledby="work-title" hidden>
+        <div class="section-kicker"><a href="#home" class="back-link"><span data-i18n="back">← BACK TO HOME</span></a></div>
+        <div class="section-heading"><h2 id="work-title" data-i18n="workHeading">Ideas in motion<span class="period">.</span></h2><p data-i18n="workLead">From physical systems to digital worlds, I like making complex things tangible.</p></div>
+        <div class="work-list">
+          <details class="work-item" name="project"><summary><span class="work-main"><span class="work-type" data-i18n="workType1">ROBOTICS / VISUALIZATION</span><strong data-i18n="workTitle1">Making sensor data visible</strong></span><span class="work-year">2026</span><span class="work-expand" aria-hidden="true">+</span></summary><div class="work-detail"><p data-i18n="workDesc1">At Daimon Robotics, I built a real-time C++ interface for visualizing robotic sensor data. I also prepared gripper datasets for tactile perception research and refined a sensing interface shown at a Shanghai AI exhibition.</p><div class="work-tags"><span>C++</span><span data-i18n="tagVisualization">Data visualization</span><span data-i18n="tagRobotics">Robotics</span></div></div></details>
+          <details class="work-item" name="project"><summary><span class="work-main"><span class="work-type" data-i18n="workType2">GAME DESIGN / DEVELOPMENT</span><strong data-i18n="workTitle2">Designing worlds to play in</strong></span><span class="work-year">2023—24</span><span class="work-expand" aria-hidden="true">+</span></summary><div class="work-detail"><p data-i18n="workDesc2">I designed two original games, including a Unity and C# 2D shooter with gameplay and narrative systems. Feedback from more than 50 beta testers shaped the balance and player experience.</p><div class="work-tags"><span>Unity</span><span>C#</span><span data-i18n="tagExperience">Player experience</span></div><a class="text-link" href="https://gestjkldio.com/game-2/game/" target="_blank" rel="noopener noreferrer" data-i18n="oldGame">Explore my earlier game archive ↗</a></div></details>
+          <details class="work-item" name="project"><summary><span class="work-main"><span class="work-type" data-i18n="workType3">RESEARCH / CONCEPT</span><strong data-i18n="workTitle3">Rethinking urban parking</strong></span><span class="work-year">2023—24</span><span class="work-expand" aria-hidden="true">+</span></summary><div class="work-detail"><p data-i18n="workDesc3">For the Diamond Challenge, I analyzed 120 samples on urban parking shortages and helped develop a mobile app concept through research and 3D modeling. The project advanced to the semifinal round.</p><div class="work-tags"><span data-i18n="tagResearch">Research</span><span>3D</span><span data-i18n="tagProduct">Product concept</span></div></div></details>
+          <details class="work-item" name="project"><summary><span class="work-main"><span class="work-type" data-i18n="workType4">BUSINESS / ANALYSIS</span><strong data-i18n="workTitle4">Research for corporate clients</strong></span><span class="work-year">2026</span><span class="work-expand" aria-hidden="true">+</span></summary><div class="work-detail"><p data-i18n="workDesc4">At China Construction Bank, I compiled financial and operational data for corporate client and industry reports, and researched company operations to support client meetings.</p><div class="work-tags"><span>Excel</span><span data-i18n="tagBusiness">Business research</span></div></div></details>
+        </div>
+        <div class="archive-note"><p data-i18n="archiveText">My earlier site collects games, art, and worldbuilding.</p><a href="https://gestjkldio.com" target="_blank" rel="noopener noreferrer" data-i18n="visitOld">VIEW ARCHIVE ↗</a></div>
+      </section>
+
+      <section class="view content-view" id="about-view" aria-labelledby="about-title" hidden>
+        <div class="section-kicker"><a href="#home" class="back-link"><span data-i18n="back">← BACK TO HOME</span></a></div>
+        <div class="about-grid"><div class="about-main"><h2 id="about-title" data-i18n="aboutHeading">A little<br>of everything<span class="period">.</span></h2><p class="about-intro" data-i18n="aboutIntro">I’m Feiming, usually Tony. I study Economics and Data Science at the University of Southern California, and I’m drawn to the space where analytical thinking meets imagination.</p><p data-i18n="aboutBody">Games first taught me to see technology as a way to shape experiences. Since then, I’ve worked with robotics data, explored business analysis, and kept making room for art, music, and sport.</p></div><aside class="about-aside"><div class="aside-photo"><img src="portrait.jpg" alt="Tony Wu" width="768" height="1024"></div><div class="aside-fact"><span data-i18n="basedIn">BASED IN</span><strong>Los Angeles, CA</strong></div><div class="aside-fact"><span data-i18n="currently">CURRENTLY</span><strong data-i18n="degree">B.S. Economics & Data Science, USC</strong></div></aside></div>
+        <div class="about-bottom"><div class="about-index"><span data-i18n="aboutIndex1">IN PRACTICE</span><p data-i18n="aboutPractice">Python, C++, C#, Java, Unity, data cleaning and visualization.</p></div><div class="about-index"><span data-i18n="aboutIndex2">BEYOND WORK</span><p data-i18n="aboutBeyond">Film, photography, R&B and hip-hop, soccer, and singing bass.</p></div><div class="about-index"><span data-i18n="aboutIndex3">LANGUAGES</span><p data-i18n="aboutLanguages">Mandarin and English.</p></div></div>
+      </section>
+
+      <section class="view content-view contact-view" id="contact-view" aria-labelledby="contact-title" hidden>
+        <div class="section-kicker"><a href="#home" class="back-link"><span data-i18n="back">← BACK TO HOME</span></a></div>
+        <div class="contact-main"><h2 id="contact-title" data-i18n="contactHeading">Let’s make<br>contact<span class="period">.</span></h2><a class="email-link" href="mailto:twu62222@usc.edu">twu62222@usc.edu <span>↗</span></a></div>
+        <div class="contact-bottom"><p data-i18n="contactNote">Open to conversations at the intersection of technology, design, and culture.</p><div><a href="https://www.linkedin.com/in/tony-wu-b129b143b/" target="_blank" rel="noopener noreferrer">LINKEDIN ↗</a><a href="https://gestjkldio.com" target="_blank" rel="noopener noreferrer" data-i18n="oldSiteLink">EARLIER SITE ↗</a></div></div>
+      </section>
+    </main>
+    <footer class="site-footer"><span>© <span id="year">2026</span> Tony Wu</span></footer>
+  </div>
+</body>
+</html>
